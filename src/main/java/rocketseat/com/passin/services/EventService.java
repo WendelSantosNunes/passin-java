@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import rocketseat.com.passin.domain.attendee.Attendee;
 import rocketseat.com.passin.domain.event.Event;
+import rocketseat.com.passin.domain.event.exceptions.EventNotFoundException;
 import rocketseat.com.passin.dto.event.EventIdDTO;
 import rocketseat.com.passin.dto.event.EventRequestDTO;
 import rocketseat.com.passin.dto.event.EventResponseDTO;
@@ -23,7 +24,7 @@ public class EventService {
 
     public EventResponseDTO getEventDetail(String eventId) {
         Event event = this.eventRepository.findById(eventId).orElseThrow(
-                () -> new RuntimeException("Event not foud with ID:" + eventId));
+                () -> new EventNotFoundException("Event not foud with ID:" + eventId));
 
         List<Attendee> attendeesList = this.attendeeRepository.findByEventId(eventId);
         return new EventResponseDTO(event, attendeesList.size());
