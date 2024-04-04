@@ -25,6 +25,10 @@ public class CheckinService {
         this.checkInRepository.save(newCheckin);
     }
 
+    public Optional<Checkin> getCheckIn(String attendeeId){
+        return this.checkInRepository.findByAttendeeId(attendeeId);
+    }
+
     private void verifyCheckInExists(String attendeeId){
         Optional<Checkin> isCheckedIn = this.checkInRepository.findByAttendeeId(attendeeId);
 
