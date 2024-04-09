@@ -110,7 +110,7 @@ Certifique-se de que todas as configurações do ambiente foram realizadas corre
 
 #### **Back-End**
 
--- **[Java](https://docs.oracle.com/en/java/)**
+- **[Java](https://docs.oracle.com/en/java/)**
 - **[Spring Boot](https://spring.io/projects/spring-boot)**
 - **[Lombok](https://mvnrepository.com/artifact/org.projectlombok/lombok/1.18.32)**
 - **[Flywaydb](https://mvnrepository.com/artifact/org.flywaydb/flyway-mysql)**
