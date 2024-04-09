@@ -32,12 +32,12 @@ da Rocketseat, o NLW.
 ### 💻 Funcionalidades
 
 - [x] **Organizador:**
-    - [x] Cadastrar um novo evento;
-    - [x] Visualizar dados de um evento;
-    - [x] Visualizar a lista de participantes.
+    - [x] Realizar o cadastro de um novo evento;
+    - [x] Visualizar os dados de um evento;
+    - [x] Visualizar a lista de participantes do evento.
 - [x] **Participante:**
-    - [x] Se inscrever em um evento;
-    - [x] Visualizar seu crachá de inscrição;
+    - [x] Realizar a inscrição em um evento;
+    - [x] Visualizar o crachá de inscrição;
     - [x] Realizar check-in no evento.
 
 --- 
